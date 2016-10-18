@@ -26,7 +26,10 @@ handlers:
   redirect_http_response_code: 301
   expiration: "30d"
 - url: /.well-known/acme-challenge/.+
-  script: appengine.letsencrypt.app
+  script: handlers.letsencrypt.app
+- url: /(blog|os|go)/.*
+  script: handlers.legacy_redirects.app
+
 
 skip_files:
 - ^(.*/)?app\.yaml

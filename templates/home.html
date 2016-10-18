@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Person">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="canonical" href="https://{{ vhost }}/" />
+    <meta property="og:image" content="https://{{ vhost }}{{ '/static/images/avatar.png' | cachekey }}">
+    <link href="{{ '/static/images/favicon.png' | cachekey }}" rel="shortcut icon" type="image/x-icon">
+    <title>Primiano Tucci — Open source enthusiast — DIY fanatic — Hobbyist photographer</title>
+    <style type="text/css">
+{% include 'htdocs/static/css/above_the_fold.css'  %}
+
+    </style>
+  </head>
+  <body>
+    <div id="bg"></div>
+
+    <section id="intro">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="https://www.bitleaks.net/">Blog</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#about">About me</a></li>
+          </ul>
+        </nav>
+        <h1>Primiano Tucci</h1>
+      </header>
+
+      <div id="avatar">
+        <img src="{{ '/static/images/avatar.png' | cachekey }}" alt="Avatar">
+      </div>
+      <div id="headline">
+          <div><h2>Open source enthusiast</h2></div>
+          <div><h2>Hobbyist photographer</h2></div>
+          <div><h2>DIY fanatic</h2></div>
+      </div>
+      <div id="social">
+        <a href="https://github.com/primiano/" title="On GitHub"><img src="{{ '/static/images/github.png' | cachekey }}"></a>
+        <a href="https://bitleaks.net/" title="My Blog"><img src="{{ '/static/images/rss.png' | cachekey }}"></a>
+        <a href="https://500px.com/ptucci" title="On 500px"><img src="{{ '/static/images/instagram.png' | cachekey }}"></a>
+        <a href="https://plus.google.com/+PrimianoTucci" title="On G+"><img src="{{ '/static/images/gplus.png' | cachekey }}"></a>
+        <a href="https://twitter.com/primianotucci" title="On twitter"><img src="{{ '/static/images/twitter.png' | cachekey }}"></a>
+      </div>
+    </section>
+
+    <section id="blog">
+      <a href="https://www.bitleaks.net/">
+        <h2>My tech blog</h2>
+        <span>bitleaks.net</span> is my blog about low-level internals and electronics.
+        <br>
+        <span>Check it out! <img class="fwd" src="{{ '/static/images/forward.png' | cachekey }}"></span>
+      </a>
+    </section>
+
+    <section id="projects">
+      <h2>Open-source projects</h2>
+
+      <a href="https://github.com/primiano/wake-my-subnet"><div class="project">
+        <h3>Wake My Subnet</h3>
+        <h4>Remote WOL for your network</h4>
+        <img src="{{ '/static/images/os-wakemysubnet.png' | cachekey }}">
+        <div>
+        Wake My Subnet is a small Linux daemon which allows to remotely wake hosts on a network using the WOL magic packet. It provides a web-based UI and is able to lookup hosts on the network segment automatically.
+        </div>
+      </div></a>
+
+      <a href="http://ppgp.sourceforge.net/">
+        <div class="project">
+          <h3>Portable PGP</h3>
+          <h4>PGP everywhere, on every OS</h4>
+          <img src="{{ '/static/images/os-portablepgp.png' | cachekey }}">
+          <div>
+          Portable PGP is a java-based open source PGP tool, which runs on Windows, Linux and Mac OS X. It is available both as an installable desktop application or USB-stick portable app.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://sourceforge.net/projects/jsmartcard/">
+        <div class="project">
+          <h3>JSmartCardExplorer</h3>
+          <h4>Low level APDU smart card development</h4>
+          <img src="{{ '/static/images/os-smartcardexplorer.jpg' | cachekey }}">
+          <div>
+          JSmartCardExplorer is a cross-platform graphical low level (APDU) smart card tool aimed to help developing of smart card applications and understanding of ISO-7816 protocol.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/primiano/tetris-vhdl/">
+        <div class="project">
+          <h3>Tetris-VHDL</h3>
+          <h4>A pure hardware implementation of Tetris</h4>
+          <img src="{{ '/static/images/os-tetrisvhdl.png' | cachekey }}">
+          <div>
+          Tetris-VHDL is a bare-metal pure hardware implementation of the Tetris game on FPGA. It includes all the control logic for the game of tetris, plus a minimal minimal graphics library and a frame buffer for VGA output.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://sourceforge.net/projects/javaopenpgpcard/">
+        <div class="project">
+          <h3>JOpenPGPCard</h3>
+          <h4>A pure Java driver for the OpenPGP Card</h4>
+          <img src="{{ '/static/images/os-openpgpcard.png' | cachekey }}">
+          <div>
+          Java OpenPGP Card Driver is a Java driver implementing the OpenPGP Card specs. It doesn't require any additional library nor any PKCS11 module, just needs a clean Java Runtime.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.sourceforge.net/projects/fourierrocks/">
+        <div class="project">
+          <h3>FourierRocks</h3>
+          <h4>A WAV file comparison tool</h4>
+          <img src="{{ '/static/images/os-fourierrocks.jpg' | cachekey }}">
+          <div>
+          FourierRocks is a graphical application to compare sound (,wav) files. It performs deep analysis of differences between wav files both in time and frequency domains.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.sourceforge.net/projects/netcross/">
+        <div class="project">
+          <h3>Netcross</h3>
+          <h4>An IP over DNS tunneling tool</h4>
+          <img src="{{ '/static/images/os-netcross.jpg' | cachekey }}">
+          <div>
+          Netcross is a tunneling software particularly useful in restricted (firewalled) network environments, which is able to establish IP tunnels exploiting Domain Name Resolution requests/responses.
+          </div>
+        </div>
+      </a>
+
+      <a href="http://lnlb.sourceforge.net/">
+        <div class="project">
+          <h3>LNLB</h3>
+          <h4>Linux Network Load Balancing</h4>
+          <img src="{{ '/static/images/os-lnlb.jpg' | cachekey }}">
+          <div>
+          Linux Network Load Balancing is an open-source project aimed to realize decentered network load balancing clusters of Linux servers.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.sourceforge.net/projects/mc2/">
+        <div class="project">
+          <h3>MC2 Multicast Chat</h3>
+          <h4>A Java server-less chat app</h4>
+          <img src="{{ '/static/images/os-mc2.jpg' | cachekey }}">
+          <div>
+          MC2 is a chat software written in Java which, unlike many popular alternatives (e.g. IRC), does not need a server but works in a distributed (i.e. peer to peer) fashion.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.sourceforge.net/projects/codek/">
+        <div class="project">
+          <h3>CoDeK</h3>
+          <h4>Java Concurrent Development frameworK</h4>
+          <img src="{{ '/static/images/os-codek.jpg' | cachekey }}">
+          <div>
+          CoDeK (formerly Concurrent Development frameworK) is a very simple, open-source, academic java library aimed to help the development of Java multi-threading concurrent applications.
+          </div>
+        </div>
+      </a>
+
+    </section>
+
+    <section id="diy">
+      <h2>DIY Projects and hacks</h2>
+
+      <a href="https://www.hackster.io/primiano/my-hifi-diy-amplifier-lm3886-gainclone-3bab33">
+        <div class="project">
+          <h3>HiFi Amplifier</h3>
+          <h4>Realization details of my amplifier based on the the GainClone chip </h4>
+          <img src="{{ '/static/images/prj-ampli.jpg' | cachekey }}">
+          <div>
+          Realization details of my DIY Hi-Fi amplifier based on the the GainClone (LM3886) chip.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.hackster.io/primiano/my-diy-stratocaster-clone-8135c3">
+        <div class="project">
+          <h3>Stratocaster clone</h3>
+          <h4>Realization details of my DIY electric guitar</h4>
+          <img src="{{ '/static/images/prj-guitar.jpg' | cachekey }}">
+          <div>
+          Realization details of my DIY electric guitar, a Stratocaster clone.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.hackster.io/primiano/my-udoo-wall-mount-set-top-box-0fd771">
+        <div class="project">
+          <h3>Wall-mount set-top box</h3>
+          <h4>My UDOO wall-mount set-top box</h4>
+          <img src="{{ '/static/images/prj-udoowall.jpg' | cachekey }}">
+          <div>
+          Pictures, video and cad model of my wall-mounted home-automation and set-top-box project based on a UDOO Quad board.
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/primiano/lgtm-hid">
+        <div class="project">
+          <h3>LGTM-HID USB Gadget</h3>
+          <h4>The ultimate code review gadget</h4>
+          <img src="{{ '/static/images/prj-lgtmhid.jpg' | cachekey }}">
+          <div>
+          LGTM-HID is a geeky (yet probably not much useful) USB gadget for ultimate code reviews. It is essentially a single-key USB-HID keyboard able to type "LGTM" (and variant) implemented using a Microchip PIC 18f4550.
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section id="photography">
+      <h2>Photography</h2>
+      <div class="gallery">
+        <a href="https://goo.gl/photos/9aEafQPSaVg7HLq1A">
+          <figure>
+            <img src="{{ '/static/images/photo-landmarks.jpg' | cachekey }}">
+            <figcaption>Landmarks</figcaption>
+          </figure>
+        </a>
+        <a href="https://goo.gl/photos/fZ2Hv96wM2hQaKaKA">
+          <figure>
+            <img src="{{ '/static/images/photo-people.jpg' | cachekey }}">
+            <figcaption>People</figcaption>
+          </figure>
+        </a>
+        <a href="https://goo.gl/photos/uQ4dk4apJkpd3eCy7">
+          <figure>
+            <img src="{{ '/static/images/photo-bw.jpg' | cachekey }}">
+            <figcaption>Black &amp; White</figcaption>
+          </figure>
+        </a>
+        <a href="https://goo.gl/photos/HPEzrBehg57MgGEZ7">
+          <figure>
+            <img src="{{ '/static/images/photo-animals.jpg' | cachekey }}">
+            <figcaption>Animals</figcaption>
+          </figure>
+        </a>
+        <a href="https://goo.gl/photos/rwCaME2saWf2xnVH7">
+          <figure>
+            <img src="{{ '/static/images/photo-architecture.jpg' | cachekey }}">
+            <figcaption>Architecture</figcaption>
+          </figure>
+        </a>
+        <a href="https://goo.gl/photos/37erKyPVNkACbEk29">
+          <figure>
+            <img src="{{ '/static/images/photo-landscapes.jpg' | cachekey }}">
+            <figcaption>Landscapes</figcaption>
+          </figure>
+        </a>
+        <a href="https://goo.gl/photos/uMfUyVjwzeiY1wY77">
+          <figure>
+            <img src="{{ '/static/images/photo-flowers.jpg' | cachekey }}">
+            <figcaption>Flowers</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.flickr.com/photos/ptucci/albums">
+          <figure>
+            <img src="{{ '/static/images/photo-travel.jpg' | cachekey }}">
+            <figcaption>More travel albums</figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>I am a computer engineer with a strong passion for computers, electronics, DIY, mechanics, music (I play piano and -badly- guitar), photography and traveling.</p>
+      <p>Tech-wise I am mostly interested in embedded HW, FPGAs, RTOSes, digital audio, security (mostly smart-cards and crypto-tokens), networking and OS internals.</p>
+      <p>I describe myself as an enthusiast, rationale, slightly obsessive but very relaxed person. There are only three things I can't stand in life: marketing, people showing off and astrology (particularly when the three happen together).</p>
+
+      <h3>Bio</h3>
+      <p>I grew up in a small village in Italy (Lesina, Apulia). I lived for a short while in the Silicon Valley. These days I live in London, the city I fell in love with.</p>
+      <p>I started using computers in the early 90's and coding in the late 90's. Since then I never stopped coding and the odds are I will never stop doing that. These days I am even paid for coding, which makes it twice as fun.</p>
+
+      <h3>Education</h3>
+      <p>I graduated with honors in 2009 in computer engineering (MS) at the University of Bologna.</p>
+      <p>In 2013 I completed my PhD with a thesis entitled "Hardware/Software Design of Dynamic Real-Time Schedulers for Embedded Multiprocessor Systems".</p>
+      <p>For publications see <a href="https://scholar.google.com/citations?user=1OWek6UAAAAJ&hl=en">my Google Scholar profile</a></p>
+
+      <h3>Work</h3>
+      <p>I have worked in my early years as a consultant and educator in the field of FPGA, digital systems and hardware design.</p>
+      <p>In the Silicon Valley, I had the opportunity to work on NVIDIA UVM (Uniform Virtual Memory), part of CUDA 6.</p>
+      <p>These days I work on Chrome, the Internet browser that very likely you are using to view this page. I work to make it faster and less memory hungry.</p>
+
+      <h3>Contacts</h3>
+      <p>E-mail: <a href="mailto:&#112;&#114;&#105;&#109;&#105;&#97;&#110;&#111;@&#98;&#105;&#116;&#108;&#101;&#97;&#107;&#115;.&#110;&#101;&#116;">&#112;&#114;&#105;&#109;&#105;&#97;&#110;&#111;@&#98;&#105;&#116;&#108;&#101;&#97;&#107;&#115;.&#110;&#101;&#116;</a></p>
+      <p>PGP Key: <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x23A345501A1A5397">1A1A5397</a> (RSA 4096)</p>
+
+      <img src="{{ '/static/images/me.jpg' | cachekey }}">
+    </section>
+  </body>
+</html>
+<script src="{{ '/static/js/home.js' | cachekey }}" type="text/javascript" async="true"></script>
+<link href="{{ '/static/css/below_the_fold.css' | cachekey }}" rel="stylesheet" type="text/css">

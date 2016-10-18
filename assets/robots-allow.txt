@@ -1,0 +1,2 @@
+User-agent: *
+# Production robots.txt: to be used on the www. vhost only.

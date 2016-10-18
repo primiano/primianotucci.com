@@ -27,6 +27,9 @@ handlers:
   expiration: "30d"
 - url: /.well-known/acme-challenge/.+
   script: handlers.letsencrypt.app
+- url: /.well-known/acme-response/.+
+  script: handlers.letsencrypt.app
+  login: admin
 - url: /(blog|os|go)/.*
   script: handlers.legacy_redirects.app
 
